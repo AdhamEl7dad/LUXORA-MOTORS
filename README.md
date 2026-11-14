@@ -114,9 +114,14 @@ All vehicle prices, specifications, and contact information are illustrative dem
 **Project Name:** LUXORA MOTORS
 
 **Students:**
-- Student 1: [Your Name]
-- Student 2: [Student Name]
-- Student 3: [Student Name]
+- Student 1: Adham Mahmoud Saad Mahmoud
+- Student 2: Ahmed Hany Ismail
+- Student 3: Ahmed Tarek Hussein Sharaf
+- Student 4: Adam Medhat Mohammed Nosir
+- Student 4: Ahmed Mohammed Salah
+- Student 4: Ahmed Medhat Abdullah
+- Student 4: Habiba Mohammed Saeed
+- Student 4: Salma Emad Ahmed
 
 ---
 
