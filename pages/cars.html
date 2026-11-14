@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Collection — LUXORA MOTORS</title>
+  <meta name="description" content="Browse the LUXORA MOTORS collection of luxury, sports, and high-performance vehicles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="logo">LUXORA <span>MOTORS</span></a>
+      <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__menu" aria-label="Main navigation">
+        <ul class="navbar__links">
+          <li><a class="navbar__link" href="../index.html">Home</a></li>
+          <li><a class="navbar__link" href="about.html">About</a></li>
+          <li><a class="navbar__link is-active" href="cars.html">Collection</a></li>
+          <li><a class="navbar__link" href="../index.html#featured">Featured</a></li>
+          <li><a class="navbar__link" href="gallery.html">Gallery</a></li>
+          <li><a class="navbar__link" href="../index.html#photoshop">Photoshop</a></li>
+          <li><a class="navbar__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img data-fallback="images/fallback/hero.jpg" src="https://images.pexels.com/photos/4756890/pexels-photo-4756890.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="" />
+    </div>
+    <div class="page-hero__content container">
+      <span class="eyebrow">The Showroom Floor</span>
+      <h1>Our Collection</h1>
+      <p>Thirty extraordinary machines. Search, filter, and explore.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="lead" style="max-width: 720px; margin: 0 auto var(--space-5); text-align: center;">
+        All prices and specifications below are <strong style="color: var(--color-gold);">illustrative examples</strong> created for this university project and have not been verified.
+      </p>
+
+      <div class="filters">
+        <input type="search" id="search-input" placeholder="Search by brand, model or name…" aria-label="Search vehicles" />
+        <select id="brand-filter" aria-label="Filter by brand"><option value="all">All Brands</option></select>
+        <select id="price-filter" aria-label="Filter by price">
+          <option value="all">All Prices</option>
+          <option value="under100">Under $100,000</option>
+          <option value="p100to200">$100,000 – $200,000</option>
+          <option value="p200to300">$200,000 – $300,000</option>
+          <option value="over300">Over $300,000</option>
+        </select>
+        <select id="category-filter" aria-label="Filter by category"><option value="all">All Categories</option></select>
+        <select id="fuel-filter" aria-label="Filter by fuel type"><option value="all">All Fuel Types</option></select>
+        <select id="transmission-filter" aria-label="Filter by transmission"><option value="all">All Transmissions</option></select>
+        <select id="sort-select" aria-label="Sort vehicles">
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="newest">Newest Models</option>
+          <option value="brand">Brand Name (A–Z)</option>
+        </select>
+        <button type="button" class="btn btn--ghost btn--small" id="clear-filters">Clear All Filters</button>
+      </div>
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+
+      <div class="card-grid" id="collection-grid"></div>
+      <p class="no-results" id="no-results">No vehicles match your search. Try a different keyword, or <button type="button" class="link-btn" id="reset-filters">clear all filters</button>.</p>
+    </div>
+  </section>
+
+  <section class="section section--charcoal">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Technical Data</span>
+        <h2>Full <span class="gold">Specifications</span></h2>
+        <p class="lead">Detailed technical data for every vehicle in the collection.</p>
+      </div>
+      <div class="spec-grid" id="spec-grid"></div>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Interested in One of These Cars?</h2>
+      <p>Contact our team to arrange a private viewing.</p>
+      <a class="btn btn--primary" href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo">LUXORA <span>MOTORS</span></a>
+          <p>A premium automotive showroom specializing in luxury, sports, and high-performance vehicles. University Multimedia Course project — all prices and specifications are illustrative.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cars.html">Collection</a>
+            <a href="../index.html#featured">Featured</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../index.html#photoshop">Photoshop</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer__contact">
+            <span>Sample address: 72 Example Boulevard, Dubai, UAE</span>
+            <span>+971 4 000 0000 (demo number)</span>
+            <span>hello@luxoramotors.example (demo)</span>
+            <span>Mon – Sat: 9:00 – 20:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 LUXORA MOTORS. All rights reserved.</span>
+        <span>University Multimedia Course Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="car-dialog" class="car-dialog" aria-labelledby="car-dialog-title">
+    <button type="button" class="dialog__close" aria-label="Close details">&times;</button>
+    <div id="car-dialog-body"></div>
+  </dialog>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/collection.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

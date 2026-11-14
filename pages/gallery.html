@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — LUXORA MOTORS</title>
+  <meta name="description" content="Professional automotive photography from the LUXORA MOTORS showroom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="../index.html" class="logo">LUXORA <span>MOTORS</span></a>
+      <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__menu" aria-label="Main navigation">
+        <ul class="navbar__links">
+          <li><a class="navbar__link" href="../index.html">Home</a></li>
+          <li><a class="navbar__link" href="about.html">About</a></li>
+          <li><a class="navbar__link" href="cars.html">Collection</a></li>
+          <li><a class="navbar__link" href="../index.html#featured">Featured</a></li>
+          <li><a class="navbar__link is-active" href="gallery.html">Gallery</a></li>
+          <li><a class="navbar__link" href="../index.html#photoshop">Photoshop</a></li>
+          <li><a class="navbar__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="page-hero__media">
+      <img data-fallback="images/fallback/hero.jpg" src="https://images.pexels.com/photos/9028761/pexels-photo-9028761.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="" />
+    </div>
+    <div class="page-hero__content container">
+      <span class="eyebrow">Through the Lens</span>
+      <h1>Automotive Gallery</h1>
+      <p>Cinematic photography from our showroom and collection.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="container">
+      <h2>See Them in Person</h2>
+      <p>Book a private viewing at the Luxora Motors showroom.</p>
+      <a class="btn btn--primary" href="contact.html">Book a Visit</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo">LUXORA <span>MOTORS</span></a>
+          <p>A premium automotive showroom specializing in luxury, sports, and high-performance vehicles. University Multimedia Course project — all prices and specifications are illustrative.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cars.html">Collection</a>
+            <a href="../index.html#featured">Featured</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="../index.html#photoshop">Photoshop</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer__contact">
+            <span>Sample address: 72 Example Boulevard, Dubai, UAE</span>
+            <span>+971 4 000 0000 (demo number)</span>
+            <span>hello@luxoramotors.example (demo)</span>
+            <span>Mon – Sat: 9:00 – 20:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 LUXORA MOTORS. All rights reserved.</span>
+        <span>University Multimedia Course Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close image view">&times;</button>
+    <img src="" alt="Enlarged gallery image" />
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/collection.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

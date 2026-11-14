@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUXORA MOTORS — Premium Automotive Showroom</title>
+  <meta name="description" content="LUXORA MOTORS — a premium automotive showroom specializing in luxury, sports, and high-performance vehicles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="home">
+
+  <!-- ===== Navigation ===== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo">LUXORA <span>MOTORS</span></a>
+      <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__menu" aria-label="Main navigation">
+        <ul class="navbar__links">
+          <li><a class="navbar__link is-active" href="#home">Home</a></li>
+          <li><a class="navbar__link" href="#about">About</a></li>
+          <li><a class="navbar__link" href="pages/cars.html">Collection</a></li>
+          <li><a class="navbar__link" href="#featured">Featured</a></li>
+          <li><a class="navbar__link" href="pages/gallery.html">Gallery</a></li>
+          <li><a class="navbar__link" href="#photoshop">Photoshop</a></li>
+          <li><a class="navbar__link" href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <img data-fallback="images/fallback/hero.jpg" src="https://images.pexels.com/photos/94272/sports-car-pkw-auto-vehicle-94272.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Luxury sports car in a dark cinematic studio setting" />
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title">DRIVE YOUR <span>DREAM.</span></h1>
+      <p class="hero__tagline">Discover Excellence. Experience Luxury.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="pages/cars.html">Explore Collection</a>
+        <a class="btn btn--ghost" href="#about">About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Who We Are</span>
+        <h2>About <span class="gold">Luxora Motors</span></h2>
+        <p class="lead">A premium automotive showroom built on a passion for engineering excellence and timeless design.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="two-col__media reveal">
+          <img data-fallback="images/fallback/showroom.jpg" src="https://images.pexels.com/photos/18108314/pexels-photo-18108314.jpeg?auto=compress&cs=tinysrgb&w=940" alt="Luxury cars in the Luxora Motors showroom" loading="lazy" />
+        </div>
+        <div class="two-col__body reveal reveal--delay-1">
+          <h3>Our Story</h3>
+          <p>Founded by a small team of collectors and enthusiasts, Luxora Motors began with a single belief: that an extraordinary car deserves an extraordinary stage. Today, our showroom curates the world's most coveted marques under one roof.</p>
+          <p>Every vehicle in our collection is hand-selected, inspected, and presented with the care it deserves — from studio-grade photography to a private, pressure-free viewing experience.</p>
+        </div>
+      </div>
+
+      <div class="two-col two-col--reverse" style="margin-top: var(--space-6);">
+        <div class="two-col__media reveal">
+          <img data-fallback="images/fallback/showroom.jpg" src="https://images.pexels.com/photos/4756890/pexels-photo-4756890.jpeg?auto=compress&cs=tinysrgb&w=940" alt="High-end sports cars displayed with stylish lighting" loading="lazy" />
+        </div>
+        <div class="two-col__body reveal reveal--delay-1">
+          <h3>Our Mission &amp; Vision</h3>
+          <p><strong>Our mission</strong> is to make the acquisition of exceptional automobiles as effortless and transparent as possible — pairing every client with the car that fits their ambition.</p>
+          <p><strong>Our vision</strong> is to become the most trusted name in premium automotive retail, recognized for integrity, curation, and an unmatched client experience.</p>
+        </div>
+      </div>
+
+      <div class="value-grid">
+        <div class="value-card reveal">
+          <h3>Curated Collection</h3>
+          <p>Every vehicle is hand-selected from the world's finest marques and inspected before it reaches our floor.</p>
+        </div>
+        <div class="value-card reveal">
+          <h3>Transparent Service</h3>
+          <p>Clear, honest guidance at every step — from your first enquiry to the moment you drive away.</p>
+        </div>
+        <div class="value-card reveal">
+          <h3>Client-First Experience</h3>
+          <p>Private viewings, tailored finance conversations, and a showroom designed to feel like a gallery.</p>
+        </div>
+        <div class="value-card reveal">
+          <h3>Aftercare Excellence</h3>
+          <p>Concierge-level aftercare, detailing partnerships, and support long after the handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Cars ===== -->
+  <section class="section section--charcoal" id="featured">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Handpicked</span>
+        <h2>Featured <span class="gold">Vehicles</span></h2>
+        <p class="lead">Three extraordinary machines, presented in detail. Prices and specifications shown are illustrative examples for this project.</p>
+      </div>
+      <div class="featured" id="featured-list"></div>
+    </div>
+  </section>
+
+  <!-- ===== Specifications ===== -->
+  <section class="section" id="specifications">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Technical Data</span>
+        <h2>Vehicle <span class="gold">Specifications</span></h2>
+        <p class="lead">Full technical breakdowns for every car in the collection — engine, performance, and drivetrain at a glance. All figures are illustrative examples.</p>
+      </div>
+      <div class="spec-grid" id="spec-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Photoshop Before & After ===== -->
+  <section class="section section--charcoal" id="photoshop">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Multimedia Coursework</span>
+        <h2>PHOTOSHOP <span class="gold">BEFORE &amp; AFTER</span></h2>
+        <p class="lead">This section is reserved for the students' own Adobe Photoshop work. Each pair places the untouched photograph beside its edited version. Five automotive photo-editing projects, from cinematic grading to a full advertising poster. Click an image to enlarge it.</p>
+      </div>
+
+      <div class="ba-grid">
+        <article class="ba-item reveal">
+          <div class="ba-item__frames">
+            <div class="ba-frame ba-frame--before">
+              <span class="ba-frame__label">Before</span>
+              <img src="images/original/image1.jpg" alt="Before: original image for project 1, Cinematic Color Grading" loading="lazy" />
+            </div>
+            <div class="ba-frame ba-frame--after">
+              <span class="ba-frame__label">After</span>
+              <img src="images/edited/image1.jpg" alt="After: edited image for project 1, Cinematic Color Grading" loading="lazy" />
+            </div>
+          </div>
+          <h3 class="ba-item__title">Project 1: Cinematic Color Grading</h3>
+          <p class="ba-item__desc">A bright daylight photograph of an Aston Martin DB12 graded into a cinematic look: teal-black shadows, warm golden highlights, deeper contrast, a soft highlight glow and a darkened vignette.</p>
+          <p class="ba-item__tech-label">Photoshop-style techniques used (to be repeated in Adobe Photoshop):</p>
+          <div class="ba-item__tech"><span class="tech-tag">Color Balance</span><span class="tech-tag">Curves</span><span class="tech-tag">Brightness &amp; Contrast</span><span class="tech-tag">Selective Color</span><span class="tech-tag">Color Grading</span></div>
+        </article>
+
+        <article class="ba-item reveal">
+          <div class="ba-item__frames">
+            <div class="ba-frame ba-frame--before">
+              <span class="ba-frame__label">Before</span>
+              <img src="images/original/image2.jpg" alt="Before: original image for project 2, Background Replacement" loading="lazy" />
+            </div>
+            <div class="ba-frame ba-frame--after">
+              <span class="ba-frame__label">After</span>
+              <img src="images/edited/image2.jpg" alt="After: edited image for project 2, Background Replacement" loading="lazy" />
+            </div>
+          </div>
+          <h3 class="ba-item__title">Project 2: Background Replacement</h3>
+          <p class="ba-item__desc">A black Range Rover shot in a plain white studio is moved into a dark luxury showroom with a spotlight and light panels; the white walls are replaced and the floor is darkened to match.</p>
+          <p class="ba-item__tech-label">Photoshop-style techniques used (to be repeated in Adobe Photoshop):</p>
+          <div class="ba-item__tech"><span class="tech-tag">Background Removal</span><span class="tech-tag">Layer Masks</span><span class="tech-tag">Selection Tools</span><span class="tech-tag">Shadow Creation</span><span class="tech-tag">Color Matching</span></div>
+        </article>
+
+        <article class="ba-item reveal">
+          <div class="ba-item__frames">
+            <div class="ba-frame ba-frame--before">
+              <span class="ba-frame__label">Before</span>
+              <img src="images/original/image3.jpg" alt="Before: original image for project 3, Blemish and Distraction Removal" loading="lazy" />
+            </div>
+            <div class="ba-frame ba-frame--after">
+              <span class="ba-frame__label">After</span>
+              <img src="images/edited/image3.jpg" alt="After: edited image for project 3, Blemish and Distraction Removal" loading="lazy" />
+            </div>
+          </div>
+          <h3 class="ba-item__title">Project 3: Blemish &amp; Distraction Removal</h3>
+          <p class="ba-item__desc">An Audi RS7 photographed against a street background: the distracting light poles above the wall are removed with content-aware inpainting, leaving the car and the clean sky untouched.</p>
+          <p class="ba-item__tech-label">Photoshop-style techniques used (to be repeated in Adobe Photoshop):</p>
+          <div class="ba-item__tech"><span class="tech-tag">Spot Healing Brush</span><span class="tech-tag">Clone Stamp</span><span class="tech-tag">Content-Aware Fill</span><span class="tech-tag">Retouching</span></div>
+        </article>
+
+        <article class="ba-item reveal">
+          <div class="ba-item__frames">
+            <div class="ba-frame ba-frame--before">
+              <span class="ba-frame__label">Before</span>
+              <img src="images/original/image4.jpg" alt="Before: original image for project 4, Dodge and Burn Enhancement" loading="lazy" />
+            </div>
+            <div class="ba-frame ba-frame--after">
+              <span class="ba-frame__label">After</span>
+              <img src="images/edited/image4.jpg" alt="After: edited image for project 4, Dodge and Burn Enhancement" loading="lazy" />
+            </div>
+          </div>
+          <h3 class="ba-item__title">Project 4: Dodge &amp; Burn Enhancement</h3>
+          <p class="ba-item__desc">A Lamborghini Revuelto with flat lighting: highlights are dodged, shadows are burned, local contrast is increased and the details are sharpened for more depth.</p>
+          <p class="ba-item__tech-label">Photoshop-style techniques used (to be repeated in Adobe Photoshop):</p>
+          <div class="ba-item__tech"><span class="tech-tag">Dodge Tool</span><span class="tech-tag">Burn Tool</span><span class="tech-tag">Curves</span><span class="tech-tag">Highlight &amp; Shadow</span><span class="tech-tag">Sharpening</span></div>
+        </article>
+
+        <article class="ba-item reveal">
+          <div class="ba-item__frames">
+            <div class="ba-frame ba-frame--before">
+              <span class="ba-frame__label">Before</span>
+              <img src="images/original/image5.jpg" alt="Before: original image for project 5, Automotive Poster Composition" loading="lazy" />
+            </div>
+            <div class="ba-frame ba-frame--after">
+              <span class="ba-frame__label">After</span>
+              <img src="images/edited/image5.jpg" alt="After: edited image for project 5, Automotive Poster Composition" loading="lazy" />
+            </div>
+          </div>
+          <h3 class="ba-item__title">Project 5: Automotive Poster Composition</h3>
+          <p class="ba-item__desc">A Porsche 911 Turbo S showroom photo becomes a LUXORA MOTORS campaign poster: darkened colour grade, gradient overlays, bold typography and gold frame lines.</p>
+          <p class="ba-item__tech-label">Photoshop-style techniques used (to be repeated in Adobe Photoshop):</p>
+          <div class="ba-item__tech"><span class="tech-tag">Typography</span><span class="tech-tag">Layer Compositing</span><span class="tech-tag">Image Masking</span><span class="tech-tag">Color Correction</span><span class="tech-tag">Graphic Design</span></div>
+        </article>
+      </div>
+
+      <p class="ba-note"><strong>Transparency note:</strong> the BEFORE images are real car photographs supplied by the project team. The AFTER images were produced with digital image-editing code (Python / OpenCV) that reproduces Photoshop-style techniques; they were <strong>not</strong> made in Adobe Photoshop. For the course submission, the team should redo the edits in Photoshop and replace images/edited/imageN.jpg (see README.txt). Click any image to enlarge it.</p>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Photography</span>
+        <h2>The <span class="gold">Gallery</span></h2>
+        <p class="lead">A cinematic look at our showroom and collection. Click any image to view it full-screen.</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <div style="text-align: center; margin-top: var(--space-5);">
+        <a class="btn btn--ghost" href="pages/gallery.html">Open Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--charcoal" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2>Contact <span class="gold">Us</span></h2>
+        <p class="lead">Visit the showroom, call, or send a message — the contact details below are demonstration placeholders for this university project.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-cards reveal">
+          <div class="contact-card">
+            <div>
+              <h3>Showroom Address</h3>
+              <p>Sample address: 72 Example Boulevard, Dubai, UAE</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div>
+              <h3>Phone</h3>
+              <p>+971 4 000 0000 (demo number)</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div>
+              <h3>Email</h3>
+              <p>hello@luxoramotors.example (demo)</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div>
+              <h3>Working Hours</h3>
+              <p>Mon – Sat: 9:00 – 20:00<br />Sunday: 11:00 – 17:00</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div>
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zm0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.7-1.6h1.6V3.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.4H7.6v3.2h2.8V21h3.1z"/></svg></a>
+                <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24"><path d="M17.5 3h3.1l-6.8 7.8L21.8 21h-6.3l-4.9-6.4L5 21H1.9l7.3-8.3L2.2 3h6.4l4.4 5.9L17.5 3zm-1.1 16.1h1.7L7.7 4.8H5.9l10.5 14.3z"/></svg></a>
+                <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26.3 26.3 0 0 0 2 12a26.3 26.3 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26.3 26.3 0 0 0 22 12a26.3 26.3 0 0 0-.4-4.8zM10 15.2V8.8L15.2 12 10 15.2z"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal--delay-1" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+              <span class="error-msg"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+971 50 123 4567" />
+              <span class="error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Test drive enquiry" />
+              <span class="error-msg"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help…"></textarea>
+            <span class="error-msg"></span>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form-success">Thank you — your message has been prepared. (Demo form: no data is sent to a server.)</p>
+          <p class="form-hint">This is a demonstration form built for a university project. Messages are validated in the browser only and are not sent anywhere.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-strip">
+    <div class="container reveal">
+      <h2>Ready to Drive Your Dream?</h2>
+      <p>Book a private viewing at the Luxora Motors showroom.</p>
+      <a class="btn btn--primary" href="pages/contact.html">Book a Visit</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">LUXORA <span>MOTORS</span></a>
+          <p>A premium automotive showroom specializing in luxury, sports, and high-performance vehicles. University Multimedia Course project — all prices and specifications are illustrative.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="pages/cars.html">Collection</a>
+            <a href="#featured">Featured</a>
+            <a href="pages/gallery.html">Gallery</a>
+            <a href="#photoshop">Photoshop</a>
+            <a href="pages/contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer__contact">
+            <span>Sample address: 72 Example Boulevard, Dubai, UAE</span>
+            <span>+971 4 000 0000 (demo number)</span>
+            <span>hello@luxoramotors.example (demo)</span>
+            <span>Mon – Sat: 9:00 – 20:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 LUXORA MOTORS. All rights reserved.</span>
+        <span>University Multimedia Course Project</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close image view">&times;</button>
+    <img src="" alt="Enlarged gallery image" />
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/collection.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
