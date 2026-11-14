@@ -118,10 +118,10 @@ All vehicle prices, specifications, and contact information are illustrative dem
 - Student 2: Ahmed Hany Ismail
 - Student 3: Ahmed Tarek Hussein Sharaf
 - Student 4: Adam Medhat Mohammed Nosir
-- Student 4: Ahmed Mohammed Salah
-- Student 4: Ahmed Medhat Abdullah
-- Student 4: Habiba Mohammed Saeed
-- Student 4: Salma Emad Ahmed
+- Student 5: Ahmed Mohammed Salah
+- Student 6: Ahmed Medhat Abdullah
+- Student 7: Habiba Mohammed Saeed
+- Student 8: Salma Emad Ahmed
 
 ---
 
